@@ -52,7 +52,7 @@ const HygrometerCard = ({ thing, backendUrl }: Props) => {
 
   const addToDashboard = async (id: number) => {
     try {
-      await axios.post(`${backendUrl}/api/dashboard`, { thing_id: id });
+      await axios.post(`${backendUrl}/api/dashboard`, { thingId: id });
     } catch (e) {
       alert('Adding things to the dashboard is not supportet yet');
     }
